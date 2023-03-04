@@ -1,0 +1,241 @@
+:root {
+    --bg-color: #ede9cc;
+    --bg-primary: #dbcd87;
+    --bg-secundary: #b5ab56;
+    --color-text: #000;
+    --text-size-primary: 16px;
+    --text-title: #8b8448;
+    --color-primary: #a29750;
+    --color-secundary: #fff5b0;
+    --hover: #fdf6be;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: Helvetica, "Trebuchet MS", sans-serif;
+    background: #fff url(../images/bg.png);
+    margin: 15px;
+}
+
+header {
+    background: var(--bg-primary);
+    height: 15.4em;
+    min-height: 250px;
+    position: relative;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1200px;
+}
+
+.logo {
+    background: url(../images/topo-imagem-principal2.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+    background: url(../images/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+}
+
+.menu {
+    background: url(../images/topo-imagem-lateral.png) no-repeat;
+    width: 450px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    padding-left: 90px;
+    padding-top: 15px;
+}
+
+.menu span {
+    display: block;
+    border-top: 1px solid var(--bg-secundary);
+    border-bottom: 1px solid var(--bg-secundary);
+    padding: 5px 0px 5px 80px;
+    font-size: 0.7em;
+    color: var(--text-title);
+    line-height: 2.1em;
+}
+
+#reserv {
+    background-color: var(--color-primary);
+    margin-left: 55px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    text-transform: uppercase;
+    color: var(--color-secundary);
+    
+}
+
+#menu-navegation {
+    float: left;
+}
+
+#menu-navegation a{
+    color: var(--text-title);
+    font-size: 0.8em;
+    padding: 5px;
+    line-height: 30px;
+}
+
+#menu-navegation a:hover {
+    background: var(--hover);
+
+}
+
+#depoiment {
+    float: right;
+    padding: 5px;
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1200px;
+}
+
+.conteiner article {
+    flex-grow: 1;
+    word-wrap: break-word;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 10px 35px;
+    font-size: 1em;
+}
+
+article h1 {
+    color: var(--text-title);
+    margin-bottom: 10px;
+}
+
+.conteiner aside {
+    flex-grow: 1;
+    width: 100%;
+    background: var(--bg-primary);
+    padding: 5px 25px;
+}
+
+footer {
+    margin: 0 auto;
+    min-width: 740px;
+    max-width: 1200px;
+    text-align: center;
+    color: var(--text-title);
+    font-size: 0.8em;
+}
+
+footer img {
+    width: 50px;
+}
+
+ul {
+    margin: 10px;
+    color: var(--color-primary);
+    font-size: 1em;
+}
+.aside-menu {
+    display: flex;
+    margin: 10px 5px;
+    border-bottom: 1px solid var(--bg-color);
+    padding-bottom: 5px;
+}
+
+.aside-menu span {
+    margin: 0px 5px 0px 10px;
+}
+
+.aside-menu h2 {
+    font-size: 1.1em;
+}
+
+ul p {
+    color: #000;
+    font-size: 0.9em;
+}
+
+ul img {
+    width: 200px;
+}
+
+@media ( max-width: 667px) {
+    header {
+        background: var(--bg-primary);
+        height: 15.4em;
+        min-height: 250px;
+        position: relative;
+        margin: 0 auto;
+        min-width: 375px;
+        max-width: 667px;
+    }
+    .menu {
+        background: url(../images/topo-imagem-lateral.png) no-repeat;
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        padding-left: 90px;
+        padding-top: 15px;
+    }
+    .logo {
+        background: url(../images/topo-imagem-principal2.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 250px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+    }
+    
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        min-width: 375px;
+        
+        
+    }
+}
+
+@media (max-width: 1180px) {
+    header {
+        background: var(--bg-primary);
+        height: 15.4em;
+        min-height: 250px;
+        position: relative;
+        margin: 0 auto;
+        min-width: 740px;
+        max-width: 1180px;
+    }
+    
+    .conteiner {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        min-width: 740px;
+        
+    }
+}
